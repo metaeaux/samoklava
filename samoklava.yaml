@@ -208,32 +208,8 @@ pcbs:
             - matrix_inner_top
           shift: [20, -11]
           rotate: 270
-      slider_l:
-        type: slider
-        anchor:
-          ref:
-            - matrix_inner_bottom
-          shift: [28, 0]
-          rotate: 270
-        params:
-          side: F
-        nets:
-          from: Braw
-          to: Bplus
-      slider_r:
-        type: slider
-        anchor:
-          ref:
-            - matrix_inner_bottom
-          shift: [28, 0]
-          rotate: 270
-        params:
-          side: B
-        nets:
-          from: Braw
-          to: Bplus
       jst_bat:
-        type: bat
+        type: jstph
         anchor:
           ref:
             - matrix_inner_bottom
