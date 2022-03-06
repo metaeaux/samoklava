@@ -191,6 +191,29 @@ outlines:
         operation: subtract
 
 pcbs:
+  top_plate:
+    # include JLCJLCJLCJLC text somewhere
+    include_keys: false
+    outlines:
+      edge:
+        outline: plate
+        layer: Edge.Cuts
+    footprints:
+      jlc_order_number:
+        type: text
+        anchor:
+          ref:
+            - matrix_ring_home
+          shift: [-0.25 kx, 0.5 ky]
+        params:
+          text: "ᴖᴥᴖ"
+          justify: left
+  bottom_plate:
+    include_keys: false
+    outlines:
+      edge:
+        outline: bottom_outline
+        layer: Edge.Cuts
   board:
     outlines:
       edge:
